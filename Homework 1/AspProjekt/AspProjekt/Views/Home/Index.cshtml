@@ -1,41 +1,13 @@
-﻿
-@model IEnumerable<AspProjekt.Models.EmployeeView>
-
-@{
-    ViewBag.Title = "Список сотрудников";
+﻿@{
+    ViewBag.Title = "Home";
 }
 
-<!DOCTYPE html>
-   <html>
-    <head>
-        <meta name="viewport" content="width=device-width" charset="utf-8" />
-        <title>Index</title>
-    </head>
-    <body>
-<hr />
-<table border="1">
-    <tr>
-        <td>Имя</td>
-        <td>Фамилия</td>
-        <td>Очество</td>
-        <td>Возвраст</td>
-        <td>Карточка сотрудника</td>
-    </tr>
+@section top{
 
-    @foreach (var item in Model)
-    {
+    @await Html.PartialAsync("Partial/_Slider")
 
-        <tr>
-            <td>@item.FirstName</td>
-            <td>@item.SurName</td>
-            <td>@item.Patronymic</td>
-            <td>@item.Age</td>
-            <td>@Html.ActionLink("Детали", "Details", new { id = item.Id })</td>
-            @*<td><a asp-action = "Details" asp-route-id = "Details"> Детали </a></td>*@
-            @*<td><a href="@Url.Action("Детали", "Details", new { id = item.Id })">Детали</a></td>*@
-        </tr>
-    }
-</table>
-</body>
-</html>
+}
 
+@await Html.PartialAsync("Partial/_FeaturedItems")
+@await Html.PartialAsync("Partial/_CategoryTab")
+@await Html.PartialAsync("Partial/_RecomendedItems")
