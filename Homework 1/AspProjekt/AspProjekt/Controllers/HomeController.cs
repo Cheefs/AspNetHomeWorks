@@ -33,7 +33,7 @@ namespace AspProjekt.Controllers
                 WorkRole="Senior Developer",
                 WorkingSince="10.10.2005"
             },
-             new EmployeeView
+            new EmployeeView
             {
                 Id = 3,
                 FirstName = "Николай",
@@ -45,7 +45,7 @@ namespace AspProjekt.Controllers
                 WorkRole="FrontEnd developer",
                 WorkingSince="10.10.2014"
             },
-              new EmployeeView
+            new EmployeeView
             {
                 Id = 4,
                 FirstName = "Петр",
@@ -57,12 +57,14 @@ namespace AspProjekt.Controllers
                 WorkRole="Senior Unity Developer",
                 WorkingSince="10.10.2010"
             }
-
         };
 
         public IActionResult Details(int id)
         {
-           return View(_employees.ElementAt(id-1));
+            var employe = _employees.FirstOrDefault(t => t.Id.Equals(id));
+            if (ReferenceEquals(employe, null))
+                return NotFound();
+            else return View(employe);
         }
 
         public IActionResult Index()
