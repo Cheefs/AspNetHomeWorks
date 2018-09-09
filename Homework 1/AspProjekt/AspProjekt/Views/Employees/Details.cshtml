@@ -1,5 +1,5 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model AspProjekt.Models.EmployeeView
+@model EmployeeView
 @{
     ViewBag.Title = "Details" ;
 }
@@ -24,7 +24,6 @@
                 <td>Департамен</td>
                 <td>Должность</td>
                 <td>Работает с</td>
-
             </tr>
             <tr>
                 <td> @Model.FirstName</td>
@@ -37,13 +36,9 @@
                 <td>@Model.WorkingSince</td>
 
                 <td>
-                
                     @Html.ActionLink("Delete", "Delete", new { id = Model.Id }))
-
                 </td>
-
             </tr>
-
         </table>
         <div>
             <a asp-action="Index" asp-route-id="Employe">На Главную</a>
