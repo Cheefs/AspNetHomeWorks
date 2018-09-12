@@ -52,7 +52,6 @@ namespace AspProjekt.Infrastructure
         {
 
         }
-
         public void AddNew(EmployeeView model)
         {
             model.Id = _employees.Max(e => e.Id) + 1;
