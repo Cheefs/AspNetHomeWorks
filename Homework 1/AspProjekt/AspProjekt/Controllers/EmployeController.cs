@@ -5,11 +5,11 @@ using AspProjekt.Models;
 namespace AspProjekt.Controllers
 {
     [Route("users")]
-    public class EmployeesController : Controller
+    public class EmployeController : Controller
     {
         
         private readonly IEmployeesData _employeesData;
-        public EmployeesController(IEmployeesData employeesData)
+        public EmployeController(IEmployeesData employeesData)
         {
             _employeesData = employeesData;
         }
@@ -56,27 +56,32 @@ namespace AspProjekt.Controllers
         [Route("edit/{id?}")]
         public IActionResult Edit(EmployeeView model)
         {
-            if (model.Id > 0)
+            if (ModelState.IsValid)
             {
-                var employe = _employeesData.GetById(model.Id);
-                if (ReferenceEquals(employe, null))
-                    return NotFound();
+                if (model.Id > 0)
+                {
+                    var employe = _employeesData.GetById(model.Id);
+                    if (ReferenceEquals(employe, null))
+                        return NotFound();
 
-                employe.FirstName = model.FirstName;
-                employe.SurName = model.SurName;
-                employe.Age = model.Age;
-                employe.Patronymic = model.Patronymic;
-                employe.Birth = employe.Birth;
-                employe.Departament = employe.Departament;
-                employe.WorkingSince = employe.WorkingSince;
-                employe.WorkRole = employe.WorkRole;
+                    employe.FirstName = model.FirstName;
+                    employe.SurName = model.SurName;
+                    employe.Age = model.Age;
+                    employe.Patronymic = model.Patronymic;
+                    employe.Birth = model.Birth;
+                    employe.Departament = model.Departament;
+                    employe.WorkingSince = model.WorkingSince;
+                    employe.WorkRole = model.WorkRole;
+                }
+                else
+                {
+                    _employeesData.AddNew(model);
+                }
+                _employeesData.Edit();
+                return RedirectToAction(nameof(Index));
             }
-            else
-            {
-                _employeesData.AddNew(model);
-            }
-            _employeesData.Edit();
-            return RedirectToAction(nameof(Index));
+            else return View(model);
         }
+
     }    
 }

@@ -10,5 +10,6 @@ namespace AspProjekt.Infrastructure.Interfaces
         void Edit();
         void AddNew(EmployeeView model);
         void Delete(int id);
+
    }
 }

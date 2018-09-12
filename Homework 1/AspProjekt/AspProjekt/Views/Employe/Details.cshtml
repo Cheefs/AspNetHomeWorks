@@ -12,9 +12,9 @@
     <body>
         <hr>
 
-        <h2>Сотрудник под индификатором @*@Model.Id*@ </h2>
+        <h2>Сотрудник: @Model.SurName @Model.FirstName @Model.Patronymic </h2>
 
-        <table border="1">
+        <table class="table table-bordered">
             <tr>
                 <td>Имя</td>
                 <td>Фамилия</td>
@@ -23,21 +23,17 @@
                 <td>Дата рождения</td>
                 <td>Департамен</td>
                 <td>Должность</td>
-                <td>Работает с</td>
+                <td>Работает с</td>              
             </tr>
             <tr>
-                <td> @Model.FirstName</td>
+                <td>@Model.FirstName</td>
                 <td>@Model.SurName</td>
                 <td>@Model.Patronymic</td>
                 <td>@Model.Age</td>
                 <td>@Model.Birth</td>
                 <td>@Model.Departament</td>
-                <td> @Model.WorkRole</td>
-                <td>@Model.WorkingSince</td>
-
-                <td>
-                    @Html.ActionLink("Delete", "Delete", new { id = Model.Id }))
-                </td>
+                <td>@Model.WorkRole</td>
+                <td>@Model.WorkingSince</td>       
             </tr>
         </table>
         <div>
