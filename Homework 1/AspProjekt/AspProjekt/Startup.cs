@@ -4,8 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http;
 using AspProjekt.Infrastructure.Interfaces;
-using AspProjekt.Infrastructure;
-
+using AspProjekt.Infrastructure.Implementations;
+//using WebStore.DAL.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace AspProjekt
 {
@@ -31,7 +32,13 @@ namespace AspProjekt
             // Добавляем сервисы, необходимые для mvc
              services.AddMvc();
             // Добавляем разрешение зависимости
-             services.AddSingleton<IEmployeesData, EmployeesData>();
+            services.AddSingleton<IEmployeesData, EmployeesData>();
+            services.AddSingleton<IProductData, ProductData>();
+
+            //services.AddDbContext<WebStoreContext>(options => options.UseSqlServer(
+            //    Configuration.GetConnectionString("DefaultConnection")));
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

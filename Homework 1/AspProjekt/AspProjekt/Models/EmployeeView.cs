@@ -30,7 +30,7 @@ namespace AspProjekt.Models
         public string WorkingSince { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Должность является обязательной")]
         [Display(Name = "Должность")]
-        public string WorkRole { get; set; }
+        public string WorkRole { get; set; }
 
     }
 }

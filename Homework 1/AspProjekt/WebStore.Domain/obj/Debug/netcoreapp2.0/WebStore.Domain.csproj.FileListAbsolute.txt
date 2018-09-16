@@ -1,0 +1,17 @@
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.deps.json
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.pdb
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfoInputs.cache
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfo.cs
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\karol\Desktop\C# Developer\6- ASP.Net\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.pdb
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.deps.json
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.pdb
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.csprojAssemblyReference.cache
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfoInputs.cache
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfo.cs
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\karol\Desktop\Homework 1\AspProjekt\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.pdb

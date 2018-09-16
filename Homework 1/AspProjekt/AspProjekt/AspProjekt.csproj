@@ -12,8 +12,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="1" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebStore.Domain\WebStore.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WebStore.Domain">
+      <HintPath>..\WebStore.Domain\bin\Debug\netstandard2.0\WebStore.Domain.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
